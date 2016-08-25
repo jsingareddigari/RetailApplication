@@ -1,0 +1,50 @@
+CREATE TABLE testPRODUCT(
+   ID INT PRIMARY KEY     NOT NULL,
+   NAME           varchar(255)    NOT NULL
+  
+   
+);
+
+CREATE TABLE testPRODUCTderails(
+   ID INT REFERENCES testPRODUCT(id)     NOT NULL,
+   VALUE  DECIMAL,
+   CURRENCY_CODE varchar(255)
+   
+);
+
+insert into testPRODUCT values(10001,'HomeTheater');
+insert into testPRODUCT values(10002,'TV');
+insert into testPRODUCT values(10003,'Microwave');
+insert into testPRODUCT values(10004,'Sofa');
+insert into testPRODUCT values(10005,'Bike');
+insert into testPRODUCT values(10006,'Laptop');
+insert into testPRODUCT values(1001,’swaroop’);
+insert into testPRODUCT values(1003,’swaroop’);
+insert into testPRODUCT values(1004,’_tem for sale’);
+
+insert into testPRODUCTderails values(1001,'1500','USD');
+insert into testPRODUCTderails values(1001,'30000','INR');
+insert into testPRODUCTderails values(10001,1500,'USD');
+insert into testPRODUCTderails values(10001,30000,'INR');
+
+insert into testPRODUCTderails values(10002,500,'USD');
+insert into testPRODUCTderails values(10002,25000,'INR');
+insert into testPRODUCTderails values(10003,150,'USD');
+insert into testPRODUCTderails values(10003,4000,'INR');
+insert into testPRODUCTderails values(10004,250,'USD');
+insert into testPRODUCTderails values(10004,5000,'INR');
+insert into testPRODUCTderails values(10005,50,'USD');
+insert into testPRODUCTderails values(10005,1500,'INR');
+insert into testPRODUCTderails values(10006,600,'USD');
+insert into testPRODUCTderails values(10006,30000,'INR');
+insert into testPRODUCTderails values(10006,400,'EUR');
+
+insert into testPRODUCTderails values(1003,100.20,’USD');
+insert into testPRODUCTderails values(1004,10.20,’USD’);
+insert into testPRODUCTderails values(1003,100,’INR’);
+insert into testPRODUCTderails values(1004,182.0,’INR');
+insert into testPRODUCTderails values(1001,1500,’USD’);
+insert into testPRODUCTderails values(1001, 30000,’INR’);
+
+
+

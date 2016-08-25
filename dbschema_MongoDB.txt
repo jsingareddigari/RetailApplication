@@ -1,0 +1,30 @@
+db.testcoll.insert({
+	"_id" : ObjectId("57bd060a33d4ea8b53b476cb"),
+	"id" : 10002,
+	"current_price" : [
+		{
+			"value" : 100.2,
+			"currency_code" : "USD"
+		},
+		{
+			"value" : 100585.2,
+			"currency_code" : "INR"
+		}
+	],
+	"name" : "TV"
+}
+{
+	"_id" : ObjectId("57bd06b333d4ea8b53b476cc"),
+	"id" : 10003,
+	"current_price" : [
+		{
+			"value" : 100.2,
+			"currency_code" : "USD"
+		},
+		{
+			"value" : 185.2,
+			"currency_code" : "INR"
+		}
+	],
+	"name" : "bike"
+})
